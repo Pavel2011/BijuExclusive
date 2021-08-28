@@ -71,7 +71,7 @@ opacity: 0.8;
 z-index: 10;
 }
 
-@media(max-height:700px){
+@media(max-height:700px) and (orientation:portrait){
   .video_stack div img {
 width: 80vw;
 height: auto;
