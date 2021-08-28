@@ -2,12 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200&display=swap');
 
 *{
-  box-sizing: border-box;
   background-color:rgb(234,201,214) ;
   color: rgb(202, 158, 243);
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+
 }
 header{
   width: 100vw;
@@ -16,13 +21,39 @@ position: fixed;
   z-index: 10;
 }
 .section-one{
+  width: 100vw;
   position: relative;
-  top: 10rem;
+  top: 12rem;
   text-align: center;
+
 }
 h1{
   font-size: 5rem;
 }
+.hello{
+  top: 10rem;
+}
 h2{
+
   font-size: 1.5rem;
+}
+.video_stack{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.video_stack div{
+  width: 25rem;
+  padding: 1rem;
+}
+.video_stack div img, 
+.video_stack div video {
+  height: 20rem;
+  padding: 1rem;
+}
+.video_stack div img:hover, 
+.video_stack div video:hover {
+opacity: 0.8;
+z-index: 10;
 }
