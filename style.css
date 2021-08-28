@@ -17,6 +17,7 @@ body{
 header{
   width: 100vw;
 position: fixed;
+padding: 0.5rem;
   text-align: center;
   z-index: 10;
 }
@@ -28,7 +29,7 @@ position: fixed;
 
 }
 h1{
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .hello{
   top: 10rem;
@@ -54,6 +55,14 @@ h2{
 }
 .video_stack div img:hover, 
 .video_stack div video:hover {
+opacity: 0.8;
+z-index: 10;
+}
+.video_stack div img:active, 
+.video_stack div video:active {
+    /* transform: scaleX(-1) scaleX(102%) scaleY(102%); */
+    transform:  scaleX(101%) scaleY(101%);
+
 opacity: 0.8;
 z-index: 10;
 }
