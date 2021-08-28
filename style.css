@@ -3,7 +3,7 @@
 
 *{
   background-color:rgb(234,201,214) ;
-  color: rgb(202, 158, 243);
+  color: rgb(202, 158, 243);/*rgb(179,131,226) see TODOs at 50proj in 50 days*/
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
@@ -15,6 +15,7 @@ body{
 
 }
 header{
+  background-color:rgb(155, 126, 138) ;
   width: 100vw;
 position: fixed;
 padding: 0.5rem;
@@ -29,7 +30,9 @@ padding: 0.5rem;
 
 }
 h1{
+  background-color:rgb(155, 126, 138) ;
   font-size: 4rem;
+  letter-spacing: 1.5rem;
 }
 .hello{
   top: 10rem;
@@ -43,15 +46,16 @@ h2{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 90rem;
 }
 .video_stack div{
   width: 25rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .video_stack div img, 
 .video_stack div video {
   height: 20rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .video_stack div img:hover, 
 .video_stack div video:hover {
@@ -61,8 +65,19 @@ z-index: 10;
 .video_stack div img:active, 
 .video_stack div video:active {
     /* transform: scaleX(-1) scaleX(102%) scaleY(102%); */
-    transform:  scaleX(101%) scaleY(101%);
+    transform:  scaleX(105%) scaleY(105%);
 
 opacity: 0.8;
 z-index: 10;
+}
+
+@media( max-height:400px) and (orientation:portrait){
+  .video_stack div img {
+
+width: 80vw;
+height: auto;
+opacity: 0.8;
+z-index: 10;
+}
+
 }
