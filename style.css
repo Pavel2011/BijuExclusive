@@ -128,15 +128,29 @@ section.brooch img{
 width: 17rem;  
 /* height: 12rem; */
 object-fit: cover;
+
 }
-.brooch p{
-  color: azure;
+.br-img{
+  width: 30rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+}
+.p p{
+  color: rgb(74, 34, 128);
+  font-size: 1.2rem;
+  text-align: center;
+}
+.br-img span{
+  color: rgb(74, 34, 128);
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 .brooch_horizontal{
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 
