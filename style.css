@@ -22,7 +22,7 @@ header{
   background-color:rgb(136, 58, 214);  
   width: 100vw;
 position: fixed;
-padding: 0.5rem;
+
   text-align: center;
   z-index: 10;
 }
