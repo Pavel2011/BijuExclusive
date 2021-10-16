@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;1,100;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
 
-*{
+html{
   /* background-color:rgb(136, 58, 214); */
   color: rgb(202, 158, 243);/*rgb(179,131,226) see TODOs at 50proj in 50 days*/
   /* font-family: 'Raleway', sans-serif; */
@@ -13,23 +13,31 @@
 
 }
 body{
+  margin: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color:rgb(210, 178, 243);
   /* opacity: 0.3; */
 }
+img:hover{
+  zoom: 170%;
+}
 header{
   background-color:rgb(136, 58, 214);  
   width: 100vw;
 position: fixed;
-
+top:0;
+/* padding: 0.5rem; */
   text-align: center;
   z-index: 10;
 }
 .main-nav{
   width: 100vw;
   height: 2rem;
-  margin-top: 0.5rem;
+  margin: 0;
+  /* margin-top: 0.5rem; */
 padding: 0;
   /* background-color: coral;
   display: flex;
@@ -37,9 +45,9 @@ padding: 0;
   align-items: center; */
 }
 .main-nav ul{
-  width: 100%;
+  width: 100vw;
   background-color: coral;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -53,16 +61,18 @@ list-style: outside none none;
 
 }
 .section-one{
+  margin-top: 3rem;
   width: 100vw;
   position: relative;
   top: 12rem;
   text-align: center;
 
 }
-h1{
+h1,h2{
   background-color:rgb(136, 58, 214); 
   font-size: 5rem;
   letter-spacing: 1.5rem;
+  text-align: center;
 }
 .hello{
   top: 10rem;
@@ -148,6 +158,11 @@ object-fit: cover;
   font-size: 1.6rem;
   font-weight: 500;
 }
+.neclace_2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .brooch_horizontal{
   width: 100vw;
   display: flex;
@@ -155,10 +170,10 @@ object-fit: cover;
   align-items: center;
   flex-wrap: wrap;
 
-}
+} 
 .brooch_horizontal div img{
-padding: 1rem;
-width: 33rem;
+padding: 1rem; 
+ width: 33rem;
 }
 .necklace{
   width: 100vw;
@@ -168,17 +183,22 @@ width: 33rem;
   width: 70%;
   object-fit: cover;
 }
+.necklace img:hover,
+.br-img img:hover{
+  zoom: 140%;
+}
 .necklace .nl-horizont{
-  height: 40rem;
+  /* height: 30rem; */
   margin: 0;
 padding: 0;
 }
 .necklace .nl-horizont img {
-  transform: rotate(90deg);
-height: 100%;
+  /* transform: rotate(90deg); */
+/* height: 100%; */
+width: 80%;
 margin: 0;
 padding: 0;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .necklace .brooch-map{
@@ -186,6 +206,22 @@ padding: 0;
   justify-content: center;
   align-items: center;
 }
+/* Braceelet start */
+.bracelet{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.bracelet h2{
+  text-align: center;
+}
+.bracelet img{
+  width: 40%;
+}
+/* Braceelet End */
 
 @media(max-height:800px) and (orientation:portrait){
   .video_stack div img {
