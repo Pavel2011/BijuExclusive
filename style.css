@@ -12,11 +12,16 @@ html{
   box-sizing: border-box;
 
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   margin: 0;
+  padding: 0;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color:rgb(210, 178, 243);
   /* opacity: 0.3; */
@@ -27,7 +32,7 @@ img:hover{
 header{
   /* margin-left: 0.5rem; */
   background-color:rgb(136, 58, 214);  
-  max-width: 100%;
+  /* max-width: 100vw; */
 position: fixed;
 top:0;
 /* padding: 0.5rem; */
@@ -46,7 +51,7 @@ padding: 0;
   align-items: center; */
 }
 .main-nav ul{
-  width: 100vw;
+  width: 104%;
   background-color: coral;
   padding: 0.5rem 0;
   display: flex;
@@ -70,7 +75,9 @@ list-style: outside none none;
 
 }
 h1,h2{
-  background-color:rgb(136, 58, 214); 
+  /* background-color:rgb(136, 58, 214);  */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   font-size: 5rem;
   letter-spacing: 1.5rem;
   text-align: center;
@@ -230,18 +237,22 @@ padding: 0;
 }
 /* Braceelet End */
 
-@media(max-height:800px) and (orientation:portrait){
+@media(max-height:800px) and (orientation:portrait),
+(max-width:800px) and (orientation:landscape){
   body{
-    width: 100vw;
+    width: 112%;
     margin: 0;
     padding: 0;
   }
   header{
     position: static;
     top: 0;
-    width: 100%;
+    width: 112%;
     margin: 0;
     padding: 0;
+  }
+  .main-nav ul{
+    width: 112%;
   }
   .video_stack div img {
 width: 80vw;
@@ -249,9 +260,11 @@ height: auto;
 opacity: 0.8;
 z-index: 10;
 }
-h1{
+h1,h2{
+  width: 112%;
   padding-left: 0.2rem;
-  font-size: 3rem;
+  padding-right: 0.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0;
 }
 
